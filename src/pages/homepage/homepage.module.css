@@ -14,7 +14,7 @@
     justify-content: space-between;
     padding: 50px 0;
     align-items: center;
-    background-image: url("/assets/dynamic-liquid-fire-abstract-background.jpg");
+    background-image: url("/assets/dynamic-liquid-fire-abstract-background.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -43,7 +43,6 @@
     line-height: 1em;
     text-align: center;
     margin: 40px 0;
-    padding-left: 80px;
     letter-spacing: 0px;
     text-align: center;
     font-weight: 900;

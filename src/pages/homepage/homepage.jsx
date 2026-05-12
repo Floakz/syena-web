@@ -35,9 +35,9 @@ export default function Homepage() {
 
             setActiveCards([
                 progress > 0,
-                progress > 0.2,
-                progress > 0.4,
-                progress > 0.6,
+                progress > 1,
+                progress > 2,
+                progress > 3,
             ])
         }
 
