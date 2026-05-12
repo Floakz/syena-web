@@ -209,6 +209,7 @@
     max-width: 1440px;
     width: 100%;
     margin: auto;
+    padding: 0 40px;
 }
 
 .stat {
@@ -342,7 +343,7 @@
 
 .clientsTitle {
     position: absolute;
-    top: 450px;
+    top: 380px;
     left: 50%;
     translate: -50%;
     text-align: center;
