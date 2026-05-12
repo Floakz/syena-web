@@ -1,0 +1,596 @@
+.homePage {
+    background-color: black;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.homeHeader {
+    background-color: black;
+    min-height: 100vh;
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 50px 0;
+    align-items: center;
+    background-image: url("public/assets/dynamic-liquid-fire-abstract-background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid rgb(138, 0, 0);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+}
+
+
+.homeHeader>div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 1440px;
+}
+
+
+.title {
+    text-transform: uppercase;
+    font-size: 7em;
+    line-height: 1em;
+    text-align: center;
+    margin: 40px 0;
+    padding-left: 80px;
+    letter-spacing: 0px;
+    text-align: center;
+    font-weight: 900;
+}
+
+
+.subTitle {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+
+.footerWrap {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.tag {
+    font-weight: 500;
+    font-size: 0.8em;
+    letter-spacing: 4px;
+    color: rgb(191, 190, 190);
+}
+
+
+.mainButton {
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    text-transform: uppercase;
+    padding: 20px 90px;
+    font-weight: 400;
+    background-color: black;
+    border-radius: 50px;
+    border: 2px solid rgba(250, 250, 250, 0.498);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    letter-spacing: 0;
+}
+
+
+.mainButton>svg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.mainButton:hover {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.457);
+    letter-spacing: 2px;
+    border: 2px solid rgba(250, 250, 250, 0.498);
+}
+
+.mainButton:hover>svg {
+    opacity: 1;
+}
+
+
+.navBar {
+    width: fit-content;
+    max-width: 1440px;
+    padding: 20px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.navBar>div {
+    display: flex;
+    gap: 20px;
+}
+
+.navBar>div>span {
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.navBar>div>span:hover {
+    color: gray;
+}
+
+.syenaLogo {
+    width: 150px;
+}
+
+
+.footerWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.massiveTitle {
+    color: white;
+}
+
+
+.massiveTitleWrapper {
+    position: relative;
+    z-index: 0;
+    height: 600px;
+}
+
+.massiveTitle {
+    font-weight: 800;
+    font-size: 20em;
+    line-height: 1em;
+    color: rgb(8, 8, 8);
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    translate: -50%;
+}
+
+.massiveTitleWrapper>.runningText {
+    position: absolute;
+    z-index: 2;
+    width: 600px;
+    left: 50%;
+    top: 200px;
+}
+
+.runningText {
+    color: white;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+.stats {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    color: white;
+    top: 700px;
+    left: 50%;
+    translate: -50%;
+    font-size: 2.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+}
+
+.stat {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.stat:nth-child(2) {
+    transition-delay: 0.15s;
+}
+
+.stat:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.statVisible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.portfolioSection {
+    position: relative;
+    height: 250vh;
+}
+
+.portfolioSticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow: hidden;
+    /* cards slide up inside here */
+}
+
+.client {
+    position: absolute;
+    bottom: 0;
+    /* start from bottom */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -20px 60px rgba(11, 11, 11, 0.8);
+    transform: translateY(100%);
+    /* hidden below */
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.client1 {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(30, 30, 30);
+    background-image: url('public/assets/jorge-cover.webp');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.client2 {
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #141414;
+    background-image: url('public/assets/ines-cover.webp');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.client3 {
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #000000;
+    background-image: url('public/assets/rui-cover.webp');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.client4 {
+    z-index: 4;
+    background: #000000;
+}
+
+.clientActive {
+    transform: translateY(0) !important;
+}
+
+
+.clientName {
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: white;
+    font-size: 5em;
+}
+
+
+.clientActivity {
+    font-size: 1.5em;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: gray;
+    /* default */
+}
+
+.jorgeActivity {
+    color: #f30000;
+}
+
+.inesActivity {
+    color: #d7ef5e;
+}
+
+.ruiActivity {
+    color: #e78a27;
+}
+
+
+.clientsTitle {
+    position: absolute;
+    top: 1000px;
+    text-align: left;
+    width: fit-content;
+    font-size: 5em;
+    text-transform: uppercase;
+    line-height: 1em;
+    font-weight: 800;
+    color: white;
+    padding-bottom: 100px;
+    border-bottom: 2px solid rgb(50, 50, 50);
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    gap: 00px;
+}
+
+.singleService {
+    color: white;
+    font-weight: 800;
+    font-size: 12em;
+    line-height: 1em;
+    opacity: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.singleService:nth-of-type(1) {
+    margin-left: 0;
+    transform: translateX(-150px);
+    transition-delay: 0.4s;
+}
+
+.singleService:nth-of-type(2) {
+    margin-left: 120px;
+    transform: translateX(150px);
+    transition-delay: 0.55s;
+}
+
+.singleService:nth-of-type(3) {
+    margin-left: 40px;
+    transform: translateX(-150px);
+    transition-delay: 0.7s;
+}
+
+.singleService:nth-of-type(4) {
+    margin-left: 170px;
+    transform: translateX(150px);
+    transition-delay: 0.85s;
+}
+
+.singleService:nth-of-type(5) {
+    margin-left: 20px;
+    transform: translateX(-150px);
+    transition-delay: 1s;
+}
+
+.singleServiceVisible {
+    opacity: 1 !important;
+    transform: translateX(0) !important;
+}
+
+/* Normal-flow sections — add as many <section className={styles.section}> as needed */
+.section {
+    color: white;
+    padding: 120px 0;
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0 50px 0;
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.footer>p {
+    color: gray;
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 1200px) {
+    .navBar {
+        padding: 20px 60px;
+    }
+
+    .title {
+        font-size: 5em;
+        padding-left: 40px;
+    }
+
+    .massiveTitle {
+        font-size: 13em;
+    }
+
+    .massiveTitleWrapper>.runningText {
+        width: 480px;
+        top: 150px;
+    }
+
+    .stats {
+        top: 600px;
+        font-size: 2em;
+    }
+
+    .clientsTitle {
+        font-size: 4em;
+        top: 800px;
+    }
+
+    .clientName {
+        font-size: 4em;
+    }
+
+    .singleService {
+        font-size: 7em;
+    }
+
+    .singleService:nth-of-type(2) {
+        margin-left: 60px;
+    }
+
+    .singleService:nth-of-type(4) {
+        margin-left: 90px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ── Header ── */
+    .navBar {
+        padding: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .title {
+        font-size: clamp(2rem, 9vw, 3.5rem);
+        padding: 0 20px;
+    }
+
+    .mainButton {
+        padding: 16px 40px;
+        font-size: 0.9em;
+    }
+
+    .footerWrap {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 16px;
+        padding: 0 20px;
+    }
+
+    /* ── Massive title section ── */
+    .massiveTitleWrapper {
+        height: auto;
+        padding: 60px 0 80px;
+    }
+
+    .portfolioSection {
+        height: 220vh;
+    }
+
+    .massiveTitle {
+        display: none;
+    }
+
+    .massiveTitleWrapper>.runningText {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 90%;
+        margin: 40px auto 0;
+        font-size: 1.1em;
+    }
+
+    .stats {
+        position: relative;
+        top: auto;
+        left: auto;
+        translate: none;
+        flex-direction: column;
+        font-size: 1.8em;
+        padding: 40px 20px 0;
+        gap: 10px;
+    }
+
+    .clientsTitle {
+        position: relative;
+        top: auto;
+        font-size: 2.5em;
+        padding: 40px 20px;
+    }
+
+    /* ── Section padding ── */
+    .section {
+        padding: 60px 0;
+    }
+
+    /* ── Client cards ── */
+    .clientName {
+        font-size: 2em;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+
+    .clientActivity {
+        font-size: 1em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+
+    /* ── Services ── */
+    .services {
+        padding: 20px;
+    }
+
+    .singleService {
+        font-size: clamp(2rem, 10vw, 5rem);
+        text-align: center;
+    }
+
+    .singleService:nth-of-type(1),
+    .singleService:nth-of-type(2),
+    .singleService:nth-of-type(3),
+    .singleService:nth-of-type(4),
+    .singleService:nth-of-type(5) {
+        margin-left: 0;
+    }
+
+    /* ── Footer ── */
+    .footer {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        padding: 40px 20px;
+    }
+}
