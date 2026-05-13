@@ -253,7 +253,7 @@
     width: 100%;
     height: 100%;
     border-radius: 20px 20px 0 0;
-    box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.8);
+    /* box-shadow: 0 -20px 60px rgba(0, 0, 0, 0.8); */
     transform: translateY(100%);
     /* hidden below */
     transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
@@ -465,6 +465,8 @@ a {
     }
 
     .clientsTitle {
+        border-top: 1px solid red;
+        text-align: left;
         font-size: 4em;
         top: 800px;
     }
@@ -516,7 +518,7 @@ a {
     /* ── Massive title section ── */
     .massiveTitleWrapper {
         height: auto;
-        padding: 60px 0 80px;
+        padding: 60px 20px 80px 20px;
     }
 
     .portfolioSection {
@@ -547,11 +549,27 @@ a {
         gap: 10px;
     }
 
+    .client {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
     .clientsTitle {
         position: relative;
         top: auto;
         font-size: 2.5em;
         padding: 40px 20px;
+    }
+
+    .singleService {
+        color: white;
+        font-weight: 800;
+        font-size: 15em;
+        line-height: 3em;
+        opacity: 0;
+        transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     /* ── Section padding ── */
@@ -574,6 +592,12 @@ a {
 
     /* ── Services ── */
     .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+        gap: 00px;
         padding: 20px;
     }
 
